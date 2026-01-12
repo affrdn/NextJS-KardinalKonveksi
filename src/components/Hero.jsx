@@ -138,7 +138,7 @@ export default function Hero() {
                 <SectionWrapper direction="left">
                   <div className="flex items-center gap-2">
                     <img
-                      src="/icons/Shirt.svg"
+                      src="/icon/ShirtCom.svg"
                       alt="Seragam Kerja"
                       className="w-6 h-6"
                     />
@@ -159,7 +159,7 @@ export default function Hero() {
                 <SectionWrapper direction="right">
                   <div className="flex items-center gap-2">
                     <img
-                      src="/icons/Shirt.svg"
+                      src="/icon/Shirt.svg"
                       alt="Seragam Kerja"
                       className="w-6 h-6"
                     />
