@@ -46,10 +46,10 @@ export const metadata: Metadata = {
     follow: true,
   },
 
-  googleBot: {
-    index: true,
-    follow: true,
-  },
+  // googleBot: {
+  //   index: true,
+  //   follow: true,
+  // },
 
   openGraph: {
     title: "Kardinal Konveksi Bandar Lampung",
