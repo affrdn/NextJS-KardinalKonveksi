@@ -89,7 +89,7 @@ export default function About() {
               </div>
 
               <a
-                href="https://www.google.com/maps?q=Jalan+Ikan+Layur+No.+33+B,+Teluk+Betung+Selatan,+Bandar+Lampung"
+                href="https://maps.app.goo.gl/bE5jtuKGRmpMyDNx8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-orange-500 text-slate-950 text-xs font-semibold hover:bg-orange-400 transition shadow-lg shadow-orange-500/30"

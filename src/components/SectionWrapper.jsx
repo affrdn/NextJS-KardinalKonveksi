@@ -1,4 +1,6 @@
 // components/SectionWrapper.jsx
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -11,7 +13,7 @@ export default function SectionWrapper({ children, direction = "up" }) {
   };
 
   return (
-    <div
+    <motion.div
       variants={variants[direction]}
       initial="hidden"
       whileInView="show"
@@ -20,6 +22,6 @@ export default function SectionWrapper({ children, direction = "up" }) {
       className="w-full"
     >
       {children}
-    </div>
+    </motion.div>
   );
 }
