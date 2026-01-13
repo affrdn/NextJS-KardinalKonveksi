@@ -21,30 +21,50 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimoni" className="py-16 bg-white scroll-mt-10">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h3 className="text-4xl font-bold text-gray-900 mb-4">
+    <section
+      id="testimoni"
+      className="py-12 sm:py-16 lg:py-20 bg-white scroll-mt-20"
+    >
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-10 sm:mb-12">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
             Testimoni Klien
           </h3>
-          <p className="text-gray-600 text-lg">Apa kata mereka tentang kami?</p>
+          <p className="text-sm sm:text-base lg:text-lg text-gray-600">
+            Apa kata mereka tentang kami?
+          </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((testi, idx) => (
             <div
               key={idx}
-              className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg"
+              className="bg-gradient-to-br from-blue-50 to-white
+              p-5 sm:p-6 lg:p-8
+              rounded-2xl shadow-md hover:shadow-lg
+              transition-shadow"
             >
-              <div className="flex gap-1 mb-4">
+              {/* Rating */}
+              <div className="flex gap-1 mb-3">
                 {[...Array(testi.rating)].map((_, i) => (
                   <Star
                     key={i}
-                    className="w-5 h-5 fill-yellow-400 text-yellow-400"
+                    className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400"
                   />
                 ))}
               </div>
-              <p className="text-gray-700 mb-4 italic">"{testi.text}"</p>
-              <p className="font-semibold text-gray-900">{testi.name}</p>
+
+              {/* Text */}
+              <p className="text-sm sm:text-base text-gray-700 mb-4 italic leading-relaxed">
+                "{testi.text}"
+              </p>
+
+              {/* Name */}
+              <p className="text-sm sm:text-base font-semibold text-gray-900">
+                {testi.name}
+              </p>
             </div>
           ))}
         </div>

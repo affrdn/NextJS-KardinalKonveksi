@@ -110,7 +110,7 @@ const cardVariants = {
 
 export default function Services() {
   return (
-    <section
+    <motion.section
       id="layanan"
       className="py-16 bg-slate-950 border-t border-slate-800 scroll-mt-10"
       variants={containerVariants}
@@ -166,6 +166,6 @@ export default function Services() {
           ))}
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }

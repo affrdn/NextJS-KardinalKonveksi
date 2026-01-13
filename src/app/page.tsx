@@ -11,7 +11,7 @@ import Catalog from "@/components/Catalog";
 
 export default function HomePage() {
   return (
-    <>
+    <div className="overflow-hidden">
       <Header />
       <Hero />
       <Catalog />
@@ -22,6 +22,6 @@ export default function HomePage() {
       <ContactSection />
       <Footer />
       <WhatsAppButton />
-    </>
+    </div>
   );
 }

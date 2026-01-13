@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { PhoneCall, Grid, Image, Layers, Info, MapPin } from "lucide-react";
 
-const sections = ["katalog", "galeri", "layanan", "tentang", "kontak"];
+const sections = ["", "katalog", "galeri", "layanan", "tentang", "kontak"];
 
 const scrollToSection = (id) => {
   const el = document.getElementById(id);
