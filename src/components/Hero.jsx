@@ -6,7 +6,7 @@ import SectionWrapper from "./SectionWrapper";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden scroll-mt-20 py-12" id="hero">
+    <section className="relative overflow-hidden scroll-mt-20 pt-12" id="hero">
       {/* Video background */}
       <div className="absolute inset-0 -z-20">
         <div

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import NextTopLoader from "nextjs-toploader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,12 @@ export const metadata: Metadata = {
     "buat kaos bandar lampung",
     "sablon lampung",
     "bordir lampung",
+    "buat baju mbg",
+    "jahit baju sekolah lampung",
+    "jahit bagu kantor lampung",
+    "konveksi seragam komunitas",
+    "konveksi seragam kantor",
+    "konveksi seragam pdh pdl",
   ],
 
   alternates: {
@@ -100,7 +107,17 @@ export default function RootLayout({
             }),
           }}
         />
-
+        <NextTopLoader
+          color="#2563eb" // Warna biru (sesuai tema aplikasi Anda)
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={3} // Ketebalan garis
+          crawl={true}
+          showSpinner={false} // False agar tidak ada loading putar di pojok kanan (biar bersih)
+          easing="ease"
+          speed={200}
+          shadow="0 0 10px #2563eb,0 0 5px #2563eb" // Efek glowing
+        />
         {children}
 
         {/* Vercel Analytics */}
